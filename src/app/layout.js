@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: {
     default:"Digital Web Agency",
-    template:"%s | Next.js 14"
   },
   description: "Votre Partenaire Numérique de Confiance",
   icons: {

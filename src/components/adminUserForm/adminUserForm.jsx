@@ -9,17 +9,17 @@ const AdminUserForm = () => {
 
   return (
     <form action={formAction} className={styles.container}>
-      <h1>Add New User</h1>
-      <input type="text" name="username" placeholder="username" />
-      <input type="text" name="email" placeholder="email" />
-      <input type="password" name="password" placeholder="password" />
-      <input type="text" name="img" placeholder="img" />
+      <h1>Ajouter un nouvel utilisateur</h1>
+      <input type="text" name="username" placeholder="Nom d'utilisateur" />
+      <input type="text" name="email" placeholder="Email" />
+      <input type="password" name="password" placeholder="Mot de passe" />
+      <input type="text" name="img" placeholder="Image" />
       <select name="isAdmin">
-        <option value="false">Is Admin?</option>
-        <option value="false">No</option>
-        <option value="true">Yes</option>
+        <option value="false">Administrateur ?</option>
+        <option value="false">Non</option>
+        <option value="true">Oui</option>
       </select>
-      <button>Add</button>
+      <button>Ajouter</button>
       {state?.error}
     </form>
   );

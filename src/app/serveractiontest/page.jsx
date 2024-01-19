@@ -10,16 +10,16 @@ const ServerActionTestPage = () => {
   return (
     <div>
       <form action={addPost}>
-        <input type="text" placeholder="title" name="title"/>
-        <input type="text" placeholder="desc" name="desc"/>
-        <input type="text" placeholder="slug" name="slug"/>
-        <input type="text" placeholder="userId" name="userId"/>
-        <button>Create</button>
+        <input type="text" placeholder="Titre" name="title"/>
+        <input type="text" placeholder="Description" name="desc"/>
+        <input type="text" placeholder="Alias" name="slug"/>
+        <input type="text" placeholder="ID utilisateur" name="userId"/>
+        <button>Créer</button>
       </form>
 
       <form action={deletePost}>
-        <input type="text" placeholder="postId" name="id" />
-        <button>Delete</button>
+        <input type="text" placeholder="ID du post" name="id" />
+        <button>Supprimer</button>
       </form>
     </div>
   )

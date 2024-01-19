@@ -9,7 +9,7 @@ const getData = async (slug) => {
   const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
 
   if (!res.ok) {
-    throw new Error("Something went wrong");
+    throw new Error("Une erreure s'est produite");
   }
 
   return res.json();
@@ -46,14 +46,14 @@ const SinglePostPage = async ({ params }) => {
         <h1 className={styles.title}>{post.title}</h1>
         <div className={styles.detail}>
           {post && (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div>Chargement...</div>}>
               <PostUser userId={post.userId} />
             </Suspense>
           )}
           <div className={styles.detailText}>
-            <span className={styles.detailTitle}>Published</span>
+            <span className={styles.detailTitle}>Publié</span>
             <span className={styles.detailValue}>
-              {post.createdAt.toString().slice(4, 16)}
+              {post.createdAt.toString().slice(0, 10)}
             </span>
           </div>
         </div>

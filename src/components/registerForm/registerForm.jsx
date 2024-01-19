@@ -19,11 +19,12 @@ const RegisterForm = () => {
   return (
     <form className={styles.form} action={formAction}>
       <input type="text" placeholder="nom d'utilisateur" name="username" />
+      <input type="text" placeholder="lien image" name="img"/>
       <input type="email" placeholder="email" name="email" />
       <input type="password" placeholder="mot de passe" name="password" />
       <input
         type="password"
-        placeholder="password again"
+        placeholder="recopier le mot de passe"
         name="passwordRepeat"
       />
       <button>S'enregister</button>

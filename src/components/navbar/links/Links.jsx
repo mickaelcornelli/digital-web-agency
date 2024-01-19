@@ -25,8 +25,10 @@ const links = [
   },
 ];
 
-const Links = ({session}) => {
+const Links = ({ session }) => {
+
   const [open, setOpen] = useState(false);
+
 
   return (
     <div className={styles.container}>
@@ -36,9 +38,14 @@ const Links = ({session}) => {
         ))}
         {session?.user ? (
           <>
-            {session.user?.isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />}
+            {session.user?.isAdmin && <NavLink item={{ title: "Administrateur", path: "/admin" }} />}
+            {session.user?.image ?
+              <Image src={session.user.image} width={30} height={30} className={styles.img} />
+              :
+              <Image src="/noavatar.png" width={30} height={30} className={styles.img} />
+            }
             <form action={handleLogout}>
-              <button className={styles.logout}>Se déconnecter</button>
+              <button className={styles.logout}>Déconnexion</button>
             </form>
           </>
         ) : (

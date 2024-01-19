@@ -14,12 +14,10 @@ const Home = () => {
           <Link href="/about" className={styles.button}>En savoir plus</Link>
           <Link href="/contact" className={styles.buttonContact}>Nous contacter</Link>
         </div>
-        <div className={styles.brands}>
-          <Image src="/brands.png" alt="" fill className={styles.brandImg} />
-        </div>
+       
       </div>
       <div className={styles.imgContainer}>
-        <Image src="/gif.gif" alt="" fill className={styles.heroImg} />
+        <Image src="/hero.png" alt="" fill className={styles.heroImg} />
       </div>
     </div>
   );

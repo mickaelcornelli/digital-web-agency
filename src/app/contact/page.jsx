@@ -7,19 +7,18 @@ import styles from "./contact.module.css";
 // const HydrationTestNoSSR = dynamic(()=>import("@/components/hydrationTest"), {ssr: false})
 
 export const metadata = {
-  title: "Contact Page",
-  description: "Contact description",
+  title: "Nous contacter",
+  description: "Remplissez le formulaire pour prendre contact avec notre équipe",
 };
 
 const ContactPage = () => {
-  // const a = Math.random();
-
-  // console.log(a);
 
   return (
     <div className={styles.container}>
-      <div className={styles.imgContainer}>
-        <Image src="/contact.png" alt="" fill className={styles.img} />
+      <div className={styles.videoContainer}>
+        <video autoPlay className={styles.video}>
+          <source src="/contact.mp4" />
+        </video>
       </div>
       <div className={styles.formContainer}>
         {/* <HydrationTestNoSSR/> */}
@@ -27,7 +26,7 @@ const ContactPage = () => {
         <form action="" className={styles.form}>
           <input type="text" placeholder="Nom et prénom" />
           <input type="text" placeholder="Adresse email" />
-          <input type="text" placeholder="Numéro de tél.(Optionnel)" />
+          <input type="text" placeholder="Numéro de tél. (Optionnel)" />
           <textarea
             name=""
             id=""
