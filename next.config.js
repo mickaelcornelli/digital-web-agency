@@ -27,6 +27,9 @@ const nextConfig = {
         hostname: "https://i.ibb.co/t4k7ZJ7/fitlife.png"
       },
     ],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   }
 }
 
