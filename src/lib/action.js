@@ -107,7 +107,7 @@ export const register = async (previousState, formData) => {
     const user = await User.findOne({ username });
 
     if (user) {
-      return { error: "Le nom d'utilisateu existe déjà" };
+      return { error: "Le nom d'utilisateur existe déjà" };
     }
 
     const salt = await bcrypt.genSalt(10);

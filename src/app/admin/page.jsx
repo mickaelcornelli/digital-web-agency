@@ -14,7 +14,7 @@ const AdminPage = async () => {
     <div className={styles.container}>
       <div className={styles.row}>
         <div className={styles.col}>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Chargement...</div>}>
             <AdminPosts />
           </Suspense>
         </div>
@@ -24,7 +24,7 @@ const AdminPage = async () => {
       </div>
       <div className={styles.row}>
         <div className={styles.col}>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Chargement...</div>}>
             <AdminUsers />
           </Suspense>
         </div>
