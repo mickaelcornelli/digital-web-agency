@@ -6,7 +6,7 @@ import { getPost } from "@/lib/data";
 
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
-  const res = await fetch(`https://digital-web-agency-gk7p17cpm-mickaelcornelli.vercel.app/api/blog/${slug}`);
+  const res = await fetch(`https://digital-web-agency.vercel.app/api/blog/${slug}`);
 
   if (!res.ok) {
     throw new Error("Une erreure s'est produite");
