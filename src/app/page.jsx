@@ -14,7 +14,7 @@ const Home = () => {
           <Link href="/about" className={styles.button}>En savoir plus</Link>
           <Link href="/contact" className={styles.buttonContact}>Nous contacter</Link>
         </div>
-       
+
       </div>
       <div className={styles.imgContainer}>
         <Image src="/hero.png" alt="" fill className={styles.heroImg} />

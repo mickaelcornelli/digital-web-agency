@@ -34,6 +34,12 @@ a {
   justify-content: space-between;
 }
 
+@media (max-width: 1736px) {
+  .container {
+    width: 1566px;
+  }
+}
+
 @media (max-width: 1536px) {
   .container {
     width: 1366px;

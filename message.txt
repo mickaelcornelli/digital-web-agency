@@ -1,0 +1,6 @@
+- Mise à jour de la state gérant le routing en vue mobile pour cacher le menu burger après une redirection
+- Ajout z-index pour voir le menu burger en mode mobile sur la partie blog
+- Modification de la visibilité du menu mobile sur les versions 769-1024px 
+- Modification sur écrans large du conteneur principale
+- Ajout d'un react spinner pour les effets de chargement 
+- Changement de logo
